@@ -61,7 +61,7 @@ class UserRepository implements UserRepositoryInterface
     /**
      * {@inheritdoc}
      */
-    public function getUserByUserCredentials($username, $password, $grantType, ClientEntityInterface $clientEntity, $guard)
+    public function getEntityByUserCredentials($username, $password, $grantType, ClientEntityInterface $clientEntity, $guard)
     {
         $provider = config('auth.guards.'.$guard.'.provider');
 
